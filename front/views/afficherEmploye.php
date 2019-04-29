@@ -91,26 +91,28 @@
                                         <span>Logout</span>
                                     </a>
                                 </li>
+
                             </ul>
+                            affiche
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
     </div>
-    <a href="affichercommandetri.php" >afficher commandes triees</a>
 
 </body>
 </html>
 
 <?PHP
-include "E:\LOGICIELS\wamp64\www\laCaveAdmin\core/employeC.php";
+
+include "../core/employeC.php";
 $employe1C=new CommandeC();
 $listeEmployes=$employe1C->afficherEmployes();
 
 //var_dump($listeEmployes->fetchAll());
 ?>
-<table border="1">
+<table border="1" color="white">
 <tr>
 <td>Reference</td>
 <td>Nom</td>
